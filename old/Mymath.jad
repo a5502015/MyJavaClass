@@ -1,0 +1,51 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2017/7/26 ¤U¤È 03:54:02
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   Testoverload4.java
+
+
+class Mymath
+{
+
+    Mymath()
+    {
+    }
+
+    public static int abs(int i)
+    {
+        return i <= 0 ? i * -1 : i;
+    }
+
+    public static double abs(double d)
+    {
+        return d <= 0.0D ? d * -1D : d;
+    }
+
+    public static long abs(long l)
+    {
+        return l <= 0L ? l * -1L : l;
+    }
+
+    public static float abs(float f)
+    {
+        return f <= 0.0F ? f * -1F : f;
+    }
+
+    public static int pow(int i, int j)
+    {
+        int k = 1;
+        for(int l = 0; l < j; l++)
+            k *= i;
+
+        return k;
+    }
+
+    public static double pow(double d, int i)
+    {
+        double d1 = 1.0D;
+        for(int j = 0; j < i; j++)
+            d1 *= d;
+
+        return d1;
+    }
+}

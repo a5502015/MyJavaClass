@@ -1,0 +1,47 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2017/8/4 ¤U¤È 02:50:41
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   TestEnum.java
+
+
+static final class TestEnum$Week extends Enum
+{
+
+    public static TestEnum$Week[] values()
+    {
+        return (TestEnum$Week[])$VALUES.clone();
+    }
+
+    public static TestEnum$Week valueOf(String s)
+    {
+        return (TestEnum$Week)Enum.valueOf(TestEnum$Week, s);
+    }
+
+    public static final TestEnum$Week Sunday;
+    public static final TestEnum$Week Monday;
+    public static final TestEnum$Week Tuesday;
+    public static final TestEnum$Week Wednesdat;
+    public static final TestEnum$Week Thursday;
+    public static final TestEnum$Week Friday;
+    public static final TestEnum$Week Saturday;
+    private static final TestEnum$Week $VALUES[];
+
+    static 
+    {
+        Sunday = new TestEnum$Week("Sunday", 0);
+        Monday = new TestEnum$Week("Monday", 1);
+        Tuesday = new TestEnum$Week("Tuesday", 2);
+        Wednesdat = new TestEnum$Week("Wednesdat", 3);
+        Thursday = new TestEnum$Week("Thursday", 4);
+        Friday = new TestEnum$Week("Friday", 5);
+        Saturday = new TestEnum$Week("Saturday", 6);
+        $VALUES = (new TestEnum$Week[] {
+            Sunday, Monday, Tuesday, Wednesdat, Thursday, Friday, Saturday
+        });
+    }
+
+    private TestEnum$Week(String s, int i)
+    {
+        super(s, i);
+    }
+}

@@ -1,0 +1,22 @@
+// Decompiled by DJ v3.7.7.81 Copyright 2004 Atanas Neshkov  Date: 2017/8/22 ¤U¤È 01:27:37
+// Home Page : http://members.fortunecity.com/neshkov/dj.html  - Check often for new version!
+// Decompiler options: packimports(3) 
+// Source File Name:   Test.java
+
+import java.io.PrintStream;
+
+class Test
+{
+
+    Test()
+    {
+    }
+
+    public static void main(String args[])
+    {
+        System.out.println("\u65B0\u589E\u7D00\u9304");
+        System.out.println("\u67E5\u8A62\u7D00\u9304");
+        System.out.println("\u522A\u9664\u7D00\u9304");
+        System.out.println("\u66F4\u65B0\u7D00\u9304");
+    }
+}
